@@ -1,16 +1,3 @@
-"""
-    Arguments:
-        filename: Path to the file to access.
-        action: 'r' for read (default) or 'w' for write.
-        content: Content to write to the file (used when action is 'w').
-
-    Returns:
-        A tuple (bool, str) where success indicates
-        whether the operation succeeded, and result contains either
-        the file's contents (on read) or an error/success message.
-"""
-
-
 def secure_archive(filename: str, action: str = "r", content: str = "",
                    ) -> tuple[bool, str]:
     try:

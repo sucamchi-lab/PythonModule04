@@ -18,9 +18,9 @@ def main() -> None:
         print("---\n")
         print(f"File '{sys.argv[1]}' closed.")
 
-        lines = content.splitlines()
-        transformed_lines = [line + "#" for line in lines]
-        transformed = "\n".join(transformed_lines)
+        lines: list[str] = content.splitlines()
+        transformed_lines: list[str] = [line + "#" for line in lines]
+        transformed: str = "\n".join(transformed_lines)
         print("Transform data:")
         print("---")
         print(transformed)
