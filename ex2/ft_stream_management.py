@@ -40,11 +40,11 @@ def main() -> None:
                 print(f"Data saved in file '{new_name}'.")
             except OSError as e:
                 print(f"[STDERR] Error opening file '{new_name}': {e}",
-                      file=sys.stderr,)
+                      file=sys.stderr)
                 print("Data not saved.")
     except OSError as e:
         print(f"[STDERR] Error opening file '{sys.argv[1]}': {e}",
-              file=sys.stderr,)
+              file=sys.stderr)
         return
 
 

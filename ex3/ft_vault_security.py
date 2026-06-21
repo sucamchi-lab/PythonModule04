@@ -22,11 +22,11 @@ def main() -> None:
     print("Using 'secure_archive' to read from a regular file:")
     print(secure_archive("ancient_fragment.txt"))
     print("Using 'secure_archive' to write previous content to a new file:")
-    success, data = secure_archive("ancient_fragment.txt")
-    if success:
+    is_success, data = secure_archive("ancient_fragment.txt")
+    if is_success:
         print(secure_archive("ancient_fragment_copy.txt", "w", data))
     else:
-        print((success, data))
+        print((is_success, data))
 
 
 if __name__ == "__main__":
